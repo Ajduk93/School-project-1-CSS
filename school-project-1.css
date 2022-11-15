@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prompt&family=Rubik+Bubbles&display=swap');
+
+/*
+
+Font-family: 'Kanit',sans-serif;
+Font-family: 'Prompt',sans-serif;
+font-family: 'Rubik Bubbles' ;
+cursive;
+ */
+
+body {
+    background: rgba(30, 29, 29, 0.897);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-wrapper {
+    text-align: center;
+    color: rgb(10, 198, 198);
+    Font-family: 'Kanit', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 1px rgb(20, 19, 19);
+    letter-spacing: 5px;
+    background-image: url(/hero-wrap.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    margin-top: 1%;
+    }
+.hero-wrapper h1 {
+    border: 10px;
+    border-radius: 15px;
+    border-color: black;
+    background: none;
+}
+.logo-picture {
+    display: flex;
+    flex-flow: row wrap;
+    border: 10px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(8, 228, 221, 0.353);
+    justify-content: start;
+}
+.logo-picture:hover{
+    border-color: rgb(10, 243, 243);
+    border-radius: 200px;
+    box-shadow: 5px 5px 5px rgba(0, 255, 255, 0.292);
+    transition-duration: 5s;
+}
+
+.header-nav-basic {
+    display: flex;
+    text-align: center;
+    border-top: 15px solid rgb(8, 129, 117);
+    padding: 10px 10px;
+}
+.header-nav-basic ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.header-school-plans {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px;
+    margin-top: 50px;
+}
+.header-nav-section-item {
+    background: none;
+    height: 30px;
+    font-family: 'Rubik Bubbles';
+    padding-top: 58px;
+    padding-right: 6px;
+    list-style:none;
+    text-transform: uppercase;
+}
+.header-nav-section-item a {
+    border: 300px;
+    border-radius: 40px;
+    padding: 20px 30px;
+    text-decoration: none;
+    background-color: rgb(5, 136, 92);
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 1px rgb(11, 179, 173);
+    text-align: center;
+    font-size: 25px;
+}
+.header-nav-section-item a:hover {
+    background-color: rgba(45, 43, 43, 0.877);
+    color: rgba(8, 220, 196, 0.653);
+    text-shadow: 2px 2px 2px black;
+    transition-duration: 2s;
+}
+.header-school-plans {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    border: 5px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 20px 20px;
+    Font-family: 'Prompt', sans-serif;
+}
+.header-school-plans ul {
+    color: rgba(6, 240, 240, 0.736);
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.48);
+    justify-content: space-around;
+    text-align: left;
+    font-size: 18px;
+}
+.header-school-plans h1:nth-child(2){
+    text-decoration: underline;
+}
+.header-school-plan1{
+display: flex;
+height: 500px;
+width: 300px;
+border: 15px;
+border-radius: 20px;
+padding: 10px 10px;
+border-color: teal;
+flex-flow: column nowrap;
+flex-basis: 20%;
+align-items: center;
+background: rgb(6, 81, 81);
+box-shadow: 5px 10px 10px rgb(13, 13, 13);
+justify-content: space-evenly;
+
+}
+.header-school-plan2{
+display: flex;
+height: 550px;
+width: 300px;
+border: 15px;
+border-radius: 20px;
+padding: 10px 10px;
+border-color: teal;
+flex-flow: column nowrap;
+flex-basis: 20%;
+align-items: center;
+justify-content: space-around;
+background: rgb(6, 81, 81);
+box-shadow: 5px 10px 10px rgb(13, 13, 13);
+}
+.header-school-plan3{
+display: flex;
+height: 500px;
+width: 300px;
+border: 15px;
+border-radius: 20px;
+padding: 10px 10px;
+border-color: teal;
+flex-flow: column nowrap;
+flex-basis: 20%;
+align-items: center;
+justify-content: space-around;
+background:rgb(6, 81, 81);
+box-shadow: 5px 10px 10px rgb(13, 13, 13);
+}
+.button-apply button{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 150px;
+    border-radius: 30px;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-family: 'Rubik Bubbles';
+    text-shadow: 2px 2px 1px black;
+    color: teal;
+    text-transform: uppercase;
+    background-color: rgb(41, 40, 40);
+}
+.button-apply :hover {
+    background-color: rgba(13, 207, 188, 0.584);
+    color: rgb(21, 20, 20);
+    text-shadow: 2px 2px 1px rgb(9, 138, 138);
+    transition: 3s;
+    height: 50px;
+    width: 150px;
+}
