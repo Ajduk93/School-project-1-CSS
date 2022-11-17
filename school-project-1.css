@@ -24,7 +24,7 @@ body {
     text-transform: uppercase;
     text-shadow: 3px 3px 1px rgb(20, 19, 19);
     letter-spacing: 5px;
-    background-image: url(/hero-wrap.webp);
+    background-image: url(hero-wrap.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vh;
