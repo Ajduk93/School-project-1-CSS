@@ -8,6 +8,9 @@ Font-family: 'Prompt',sans-serif;
 font-family: 'Rubik Bubbles' ;
 cursive;
  */
+ *{
+    box-sizing: border-box;
+ }
 
 body {
     background: rgba(30, 29, 29, 0.897);
@@ -55,11 +58,14 @@ body {
 .header-nav-basic {
     display: flex;
     text-align: center;
+    flex-flow: nowrap;
     border-top: 15px solid rgb(8, 129, 117);
-    padding: 10px 10px;
+    border-bottom: #108f84;
+    padding: 10px;
 }
 .header-nav-basic ul {
     display: flex;
+    flex-flow: row wrap;
     justify-content: flex-end;
     width: 100%;
 }
@@ -88,6 +94,8 @@ body {
     text-shadow: 2px 2px 1px rgb(11, 179, 173);
     text-align: center;
     font-size: 25px;
+    justify-content: space-around;
+    width: 100%;
 }
 .header-nav-section-item a:hover {
     background-color: rgba(45, 43, 43, 0.877);
@@ -105,6 +113,8 @@ body {
     align-items: center;
     padding: 20px 20px;
     Font-family: 'Prompt', sans-serif;
+    flex-basis: 25%;
+    min-height: 60vh;
 }
 .header-school-plans ul {
     color: rgba(6, 240, 240, 0.736);
@@ -125,49 +135,48 @@ body {
 }
 .header-school-plan1{
 display: flex;
-height: 500px;
+min-height: 600px;
 width: 300px;
 border: 15px;
 border-radius: 20px;
 padding: 10px 10px;
 border-color: teal;
 flex-flow: column nowrap;
-flex-basis: 20%;
 align-items: center;
 background: rgb(6, 81, 81);
 box-shadow: 5px 10px 10px rgb(13, 13, 13);
 justify-content: space-evenly;
-
+position: relative;
 }
 .header-school-plan2{
 display: flex;
-height: 550px;
+min-height: 650px;
 width: 300px;
 border: 15px;
 border-radius: 20px;
 padding: 10px 10px;
 border-color: teal;
 flex-flow: column nowrap;
-flex-basis: 20%;
 align-items: center;
 justify-content: space-around;
 background: rgb(6, 81, 81);
 box-shadow: 5px 10px 10px rgb(13, 13, 13);
+position: relative;
 }
 .header-school-plan3{
 display: flex;
-height: 500px;
+min-height: 620px;
 width: 300px;
 border: 15px;
 border-radius: 20px;
 padding: 10px 10px;
 border-color: teal;
 flex-flow: column nowrap;
-flex-basis: 20%;
 align-items: center;
 justify-content: space-around;
 background:rgb(6, 81, 81);
 box-shadow: 5px 10px 10px rgb(13, 13, 13);
+position: relative;
 }
 .button-apply button{
     display: flex;
@@ -192,4 +201,160 @@ box-shadow: 5px 10px 10px rgb(13, 13, 13);
     transition: 3s;
     height: 50px;
     width: 150px;
+}
+.footer {
+    background-color: #108f84;
+}
+.about-footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    Font-family: 'Prompt', sans-serif;
+    width: 60%;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+.about-footer h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(100, 127, 118, 0.557);
+    letter-spacing: 8px;
+    Font-family: 'Kanit', sans-serif;
+}
+
+.header-school-plan1 button{
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+}
+.header-school-plan2 button {
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+}
+.header-school-plan3 button {
+    position: absolute;
+    right: 80px;
+    bottom: 10px;
+}
+footer{
+    background-color: #0f625bb6;
+    display: flex;
+    padding: 25px 25px;
+    margin-top: 50px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%
+}
+
+img {
+    height: 250px;
+    width: 290px;
+    border: 2px solid teal;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px black;
+}
+.footer-founder-div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 60%;
+
+}
+.footer-cofounder-div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 60%;
+}
+
+.footer-founder-div h1 {
+    Font-family: 'Kanit', sans-serif;
+    margin-top: 1;
+    padding-bottom: 2px;
+    text-shadow: 1px 1px 1px #099a89;
+}
+.footer-cofounder-div h1{
+    Font-family: 'Kanit', sans-serif;
+    margin-top: 1;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px #099a89;
+}
+.footer-founder-div p {
+    padding-bottom: 100px;
+    margin-left: 10px;
+    justify-content: flex-end;
+    Font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+}
+.footer-cofounder-div p {
+    padding-bottom: 100px;
+    margin-left: 10px;
+    justify-content: flex-end;
+    Font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+}
+.main-footer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: rgba(35, 171, 125, 0.728);
+    width: 105%;
+    padding: 30px 10px;
+}
+.main-footer__nav {
+    width: 20%;
+    padding: 25px 0;
+}
+.main-footer__nav-social-icons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.main-footer__nav-list {
+    display: flex;
+    flex-flow: column wrap;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    text-align: center;
+}
+.main-footer__nav-list li a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+}
+.main-footer__nav-social-icons {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 35px;
+    width: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #0A66C2;
+    color: white;
 }
