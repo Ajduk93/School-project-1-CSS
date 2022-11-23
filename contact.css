@@ -1,0 +1,86 @@
+@import url(/school-project-1.css);
+
+*body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*
+
+Font-family: 'Kanit',sans-serif;
+Font-family: 'Prompt',sans-serif;
+font-family: 'Rubik Bubbles' ;
+
+ */
+
+.input__section{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    background-image:url(/enrollment-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid turquoise;
+    box-shadow: 1px 1px 1px black;
+    height: 80vh;
+    justify-content: space-around;
+}
+.contact__headline{
+    color: aquamarine;
+    text-shadow: 2px 2px 2px rgb(11, 22, 22);
+    font-size: 20px;
+    Font-family: 'Prompt', sans-serif;
+}
+.input__section h1 {
+    color: aquamarine;
+    text-shadow: 2px 2px 2px rgb(11, 22, 22);
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-size: 20px;
+    Font-family: 'Prompt', sans-serif;
+    padding: 1px;
+    margin-bottom: 0;
+}
+.input__section input {
+    border: 2px solid rgb(10, 153, 139);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.537);
+    height: 30px;
+    width: 250px;
+    background-color: rgb(118, 116, 116);
+    color: rgb(70, 239, 208);
+    font-size: 20px;
+}
+.input__section sup {
+    color: red;
+}
+.add_message__input input {
+    height:  130px;
+    width: 250px;
+}
+.input__section button{
+    height: 40px;
+    width: 150px;
+    background-color: rgb(6, 142, 97);
+    border: 2px solid rgba(9, 9, 9, 0.416);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(3, 138, 84, 0.714);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px turquoise;
+    font-family: 'Rubik Bubbles';
+}
+.input__section button:hover {
+    cursor: pointer;
+    background-color: rgba(245, 222, 179, 0.768) ;
+    transition: 2s ease-in-out;
+}
+.input__section select {
+    border: 2px solid rgb(10, 153, 139);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.537);
+    height: 30px;
+    width: 250px;
+    background-color: rgb(118, 116, 116);
+    color: rgb(70, 239, 208);
+    font-size: 20px;
+}
